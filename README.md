@@ -30,10 +30,20 @@ Public static assets (responsive WebP/JPEG image crops, `favicon.svg`, `og-previ
 
 ## Deployment
 
-`dist/` is a pure static directory with pre-rendered `index.html` entry points for every route and can be deployed directly to Cloudflare Pages, Vercel, Netlify, or GitHub Pages:
+### Cloudflare Workers (Static Assets)
+
+`wrangler.jsonc` is configured for Cloudflare Workers Static Assets (`./dist`):
 
 - **Build command:** `npm run build`
-- **Publish directory:** `dist`
+- **Deploy command:** `npx wrangler deploy`
+- **Root directory:** `/` (repository root)
+
+### Cloudflare Pages / Vercel / Netlify
+
+`dist/` is a pure static directory with pre-rendered `index.html` entry points for every route:
+
+- **Build command:** `npm run build`
+- **Publish / Output directory:** `dist`
 
 ## Design & Code Reference Credit
 
