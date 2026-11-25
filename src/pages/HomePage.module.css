@@ -1,0 +1,34 @@
+.selectedWork {
+  background-color: var(--bg-paper);
+  color: var(--text-paper);
+  padding: clamp(48px, 6.5vw, 84px) 0;
+}
+
+.sectionIntro {
+  margin-bottom: clamp(28px, 4vw, 48px);
+}
+
+.eyebrowRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--amber-on-paper);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.heading {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 4.2vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.02;
+  color: var(--text-paper);
+  max-width: 24ch;
+}

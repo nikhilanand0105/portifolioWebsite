@@ -1,0 +1,134 @@
+.section {
+  background-color: var(--bg-paper);
+  color: var(--text-paper);
+  padding: clamp(48px, 6.5vw, 84px) 0;
+  border-bottom: 1px solid var(--border-paper);
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.eyebrowRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--amber-on-paper);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.heading {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.8vw, 2.85rem);
+  font-weight: 700;
+  line-height: 1.04;
+  color: var(--text-paper);
+}
+
+.sub {
+  margin: 0;
+  max-width: 60ch;
+  font-size: 0.98rem;
+  color: var(--text-paper-muted);
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background-color: var(--bg-paper-elevated);
+  border: 1px solid var(--border-paper);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.repoLabel {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--amber-on-paper);
+  margin-bottom: 6px;
+}
+
+.cardTitle {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.titleLink {
+  color: var(--text-paper);
+  text-decoration: none;
+}
+
+.titleLink:hover {
+  color: var(--amber-on-paper);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.desc {
+  margin: 0 0 10px;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-paper-muted);
+}
+
+.note {
+  margin: 0;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border-paper);
+  font-size: 0.84rem;
+  line-height: 1.48;
+  color: var(--text-paper-subtle);
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: var(--bg-paper-subtle);
+  color: var(--text-paper);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

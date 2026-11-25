@@ -1,0 +1,149 @@
+.centerpiece {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+}
+
+.proseCol {
+  min-width: 0;
+}
+
+.sectionHeading {
+  margin: 0 0 14px;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  font-weight: 700;
+  line-height: 1.06;
+  color: var(--text-paper);
+}
+
+.bodyP {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-paper-muted);
+}
+
+.bodyP:last-child {
+  margin-bottom: 0;
+}
+
+.calloutBox {
+  background-color: var(--bg-paper-elevated);
+  border: 1px solid var(--border-paper);
+  border-left: 4px solid var(--amber-fill-paper);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.calloutTitle {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-paper);
+}
+
+.codeSteps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.codeStepCard {
+  background-color: var(--bg-paper-elevated);
+  border: 1px solid var(--border-paper);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.codeTag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--amber-on-paper);
+}
+
+.evidenceList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.evidenceItem {
+  padding: 12px 14px;
+  background-color: var(--bg-paper-elevated);
+  border: 1px solid var(--border-paper);
+  border-radius: var(--radius-sm);
+}
+
+.kpiStrip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.kpiCard {
+  background-color: var(--bg-paper-elevated);
+  border: 1px solid var(--border-paper);
+  border-radius: var(--radius-md);
+  padding: 18px;
+}
+
+.kpiNumber {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.6vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--amber-on-paper);
+  margin-bottom: 6px;
+}
+
+.kpiLabel {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-paper-muted);
+}
+
+.stagePhotoCard {
+  margin: 0;
+  background-color: var(--bg-paper-elevated);
+  border: 1px solid var(--border-paper);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.stagePhotoCard img {
+  width: 100%;
+  height: auto;
+}
+
+.stageCaption {
+  padding: 12px 14px;
+  font-size: 0.86rem;
+  color: var(--text-paper-muted);
+  border-top: 1px solid var(--border-paper);
+}
+
+@media (max-width: 880px) {
+  .twoCol,
+  .codeSteps,
+  .kpiStrip {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,63 @@
+/* Design tokens adapted from HamishMW/portfolio timing & scale architecture (MIT)
+ * paired with Nikhil Anand's photographic editorial color palette. */
+
+:root {
+  /* Motion & timing curves */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-xs: 200ms;
+  --duration-s: 300ms;
+  --duration-m: 400ms;
+  --duration-l: 600ms;
+  --duration-xl: 800ms;
+
+  /* Typography stacks */
+  --font-display: 'Barlow Condensed', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-body: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+
+  /* Warm near-black surface (opening spread, footer, dark showcase bands) */
+  --bg-dark: #141210;
+  --bg-dark-elevated: #1e1a16;
+  --bg-dark-card: #25201b;
+  --border-dark: rgba(247, 243, 236, 0.16);
+  --text-dark: #f7f3ec;
+  --text-dark-muted: #cec5b8;
+  --text-dark-subtle: #a99f91;
+
+  /* Warm off-white reading surface (selected work details, longer stories, case studies) */
+  --bg-paper: #f5f0e8;
+  --bg-paper-elevated: #fffdf9;
+  --bg-paper-subtle: #eae2d4;
+  --border-paper: rgba(23, 20, 17, 0.15);
+  --text-paper: #171411;
+  --text-paper-muted: #463f37;
+  --text-paper-subtle: #645b51;
+
+  /* Event-photograph amber accents (verified high contrast per surface) */
+  --amber: #e59a2b;
+  --amber-bright: #f2ad44;
+  --amber-on-paper: #a04804;
+  --amber-fill-paper: #cf6e12;
+  --amber-soft-dark: rgba(229, 154, 43, 0.14);
+  --amber-soft-paper: rgba(207, 110, 18, 0.11);
+
+  /* Layout & spacing */
+  --max-width: 1240px;
+  --max-reading: 70ch;
+  --gutter: clamp(18px, 4vw, 56px);
+  --nav-height: 64px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-xs: 0.01ms;
+    --duration-s: 0.01ms;
+    --duration-m: 0.01ms;
+    --duration-l: 0.01ms;
+    --duration-xl: 0.01ms;
+  }
+}

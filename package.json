@@ -1,0 +1,24 @@
+{
+  "name": "nikhil-anand-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Software engineering portfolio of Nikhil Anand (VIT Chennai, Class of 2028)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs && rm -rf dist-ssr",
+    "preview": "vite preview --port 4173 --strictPort"
+  },
+  "dependencies": {
+    "@fontsource/barlow-condensed": "^5.2.8",
+    "@fontsource/instrument-sans": "^5.2.8",
+    "framer-motion": "^11.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

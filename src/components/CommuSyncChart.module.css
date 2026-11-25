@@ -1,0 +1,145 @@
+.card {
+  background-color: var(--bg-paper-elevated);
+  border: 1px solid var(--border-paper);
+  border-radius: var(--radius-lg);
+  padding: clamp(18px, 2.8vw, 28px);
+  box-shadow: 0 18px 40px rgba(23, 20, 17, 0.06);
+}
+
+.topRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px 16px;
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--amber-on-paper);
+  margin-bottom: 4px;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text-paper);
+}
+
+.deltaBadge {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: var(--amber-soft-paper);
+  border: 1px solid rgba(160, 72, 4, 0.35);
+  color: var(--amber-on-paper);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.chartRegion {
+  position: relative;
+  padding-top: 24px;
+}
+
+.axisRow {
+  position: relative;
+  height: 18px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border-paper);
+}
+
+.tickLabel {
+  position: absolute;
+  top: 0;
+  transform: translateX(-2px);
+  font-size: 0.72rem;
+  color: var(--text-paper-subtle);
+  white-space: nowrap;
+}
+
+.bars {
+  display: grid;
+  gap: 18px;
+}
+
+.barGroup {
+  display: grid;
+  gap: 6px;
+}
+
+.barHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px 12px;
+}
+
+.barLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-paper);
+}
+
+.barValue {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-paper-muted);
+}
+
+.barValueAfter {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--amber-on-paper);
+}
+
+.track {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  background-color: var(--bg-paper-subtle);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gridline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(23, 20, 17, 0.11);
+  z-index: 1;
+}
+
+.barBefore {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  background-color: #6b6359;
+  border-radius: 0 4px 4px 0;
+}
+
+.barAfter {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  background-color: var(--amber-fill-paper);
+  border-radius: 0 4px 4px 0;
+}
+
+.explainer {
+  margin: 18px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-paper);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-paper-muted);
+}

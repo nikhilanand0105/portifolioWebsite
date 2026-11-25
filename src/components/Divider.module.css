@@ -1,0 +1,43 @@
+.divider {
+  position: relative;
+  width: var(--lineWidth);
+  height: var(--lineHeight);
+  --divider-color: var(--amber-fill-paper);
+}
+
+.divider[data-surface='dark'] {
+  --divider-color: var(--amber);
+}
+
+.line {
+  width: 100%;
+  height: 100%;
+  background-color: var(--divider-color);
+  opacity: 1;
+  transform-origin: left center;
+  transform: scaleX(1);
+  transition: transform var(--duration-m) var(--ease-standard) var(--collapseDelay),
+    opacity var(--duration-m) var(--ease-standard) var(--collapseDelay);
+}
+
+.line[data-collapsed='true'] {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.notch {
+  position: absolute;
+  top: var(--lineHeight);
+  width: var(--notchWidth);
+  height: var(--notchHeight);
+  background-color: var(--divider-color);
+  clip-path: polygon(0 -1px, 100% -1px, calc(100% - 8px) 100%, 8px 100%);
+  opacity: 1;
+  transition: clip-path var(--duration-m) var(--ease-standard) var(--collapseDelay),
+    opacity var(--duration-m) var(--ease-standard) var(--collapseDelay);
+}
+
+.notch[data-collapsed='true'] {
+  opacity: 0;
+  clip-path: polygon(0 -1px, 0 -1px, 8px 100%, 8px 100%);
+}
